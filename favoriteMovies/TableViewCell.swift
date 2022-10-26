@@ -1,0 +1,34 @@
+//
+//  TableViewCell.swift
+//  tableViewNotes
+//
+//  Created by DEKLAN KIRK on 10/20/22.
+//
+
+import UIKit
+
+class TableViewCell: UITableViewCell {
+
+    @IBOutlet weak var nameOutlet: UILabel!
+    
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+    func configure (name:String, year:String, rating:String){
+        nameOutlet.text = name
+        
+    }
+    
+    
+    
+}
